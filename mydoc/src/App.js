@@ -8,16 +8,19 @@ import Footer from './component/layout/Footer'
 //Pages
 import Intro from './component/pages/Intro'
 import MainProductList from './component/pages/MainProductList'
+import DashBoard from './component/pages/DashBoard'
+
 
 function App() {
     return (
         <div className="App">
             <Header></Header>
             <div className="bodyContainer">
-                <Intro></Intro>
-                <MainProductList></MainProductList>
+                {/*<Intro></Intro>*/}
+                {/*<MainProductList></MainProductList>*/}
+                <DashBoard></DashBoard>
             </div>
-            <Footer></Footer>
+            {/*<Footer></Footer>*/}
         </div>
     );
 }

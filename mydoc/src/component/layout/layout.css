@@ -16,12 +16,21 @@
     height: 44px;
     display: flex;
     align-items: center;
+    background-color: #172328;
+    display: flex;
+    justify-content: space-between;
+}
+.navMenu {
+    width: 11px;
+    height: 18px;
+    background: no-repeat center / contain url("/src/img/hamMenu.svg");
+    margin-left: 18px;
+    cursor: pointer;
 }
 .headerLogo {
-    width: 118px;
-    height: 22px;
-    background: no-repeat center / contain url("/src/img/logo.png");
-    margin-left: 18px;
+    width: 119px;
+    height: 24px;
+    background: no-repeat center / contain url("/src/img/kiwiLogo.svg");
     cursor: pointer;
 }
 
