@@ -1,5 +1,15 @@
 import React, {useContext, useEffect, useState} from 'react';
 function MainProductList() {
+    let [shopInfo, setShopInfo] = useState();
+    // 부분교체
+    // const shopInfoCopy = {...shopInfo};
+    // shopInfoCopy.name = "test"
+    // setShopInfo(shopInfoCopy);
+
+    // 전체교체
+    // const shopInfoNew = {name: "test", value: 100};
+    // setShopInfo(shopInfoNew);
+
     let [shopName, setShopName] = useState('다래샵');
     let [memberShip, setMemberShip] = useState('BUSINESS');
     let [creditCount, setCreditCount] = useState('100');
