@@ -45,207 +45,21 @@
 }
 .bodyContainer {
   width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
   /*height: calc(100vh - 44px - 73px);*/
-  height: 100vh;
+  /*height: 100vh;*/
   overflow: hidden auto;
 }
-.mainProductList {
-  width: 100%;
-  max-height: 100%;
-}
-.mainProductListWrap {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: calc(9px / 2 );
-  row-gap: calc(9px / 2 );
-  margin: 0;
-  padding: 20px 16px;
-}
-@media screen and (min-width: 620px) {
-  .mainProductListWrap {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-.mainProductItem {
-  background-color: #dcdcdd;
-  width: 100%;
-  padding-bottom: 133.5329%;
-  cursor: pointer;
-}
 
-.dashboardContentsInner {
-  width: 100%;
-  height: auto;
-  padding:10px;
-  background-color: #dcdcdd;
-}
-.dashboardList {
+ul {
   margin: 0;
   padding: 0;
-  padding: 20px 22px;
 }
-.dashboardItem {
+li {
   list-style: none;
-  border: 1px solid #DCDCDD;
 }
-.dashboardItemWrap {
-  padding: 24px 16px;
-}
-.dashboardItem+.dashboardItem {
-  margin-top: 12px;
-}
-.dashboardItemInner {
-  display: flex;
-}
-.dashboardItemInnerShopIcon {
-  width: 48px;
-  height: 48px;
-  background: #F3F3F3 no-repeat center / contain url("/src/img/shop.svg");
-  background-size: 26px 22px;
-  border-radius: 50%;
-}
-.dashboardItemInnerDetail {
-  display: flex;
-  flex-direction: column;
-}
-.dashboardItemInnerDetail+.dashboardItemInnerDetail {
-  margin-left: 14px;
-}
-.dashboardItemInnerDetailShop {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-  color: #000000;
-  text-align: left;
-  margin-bottom: 6px;
-}
-.dashboardItemInnerDetailWrap {
-  display: flex;
-  flex-wrap: wrap;
-}
-.dashboardItemInnerDetailMember {
-  display: flex;
-}
-.dashboardItemInnerDetailMember+.dashboardItemInnerDetailMember {
-  /*margin-left: 15px;*/
-}
-.dashboardItemInnerDetailMemberIcon {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background: no-repeat center / contain url("/src/img/business.svg");
-  margin-right: 2px;
-}
-.dashboardItemInnerDetailMemberIcon.is_credit {
-  background: no-repeat center / contain url("/src/img/credit.svg");
-}
-.dashboardItemInnerDetailMemberType {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 22px;
-  color: #000000;
-}
-.dashboardItemInnerStatusList {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 0;
-  padding: 12px 0 0 0;
-  gap: 11px 11px;
-}
-.dashboardItemInnerStatusItem {
-  height: 66px;
-  list-style: none;
-  background: #F5F5F5;
-  border-radius: 8px;
-  padding: 8px 10px 12px;
-  box-sizing:border-box;
-}
-.dashboardItemInnerStatusItem .statusListDesc {
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 22px;
-  color: #000000;
-  height: 22px;
-}
-.dashboardItemInnerStatusItem .statusListDescData {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 22px;
-  color: #000000;
-}
-
-/*notice*/
-.dashboardItemNotice {
-  padding: 20px 20px 0;
-}
-.dashboardItemNoticeTitle {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 16px;
-  border-bottom:  1px solid #DCDCDD;;
-}
-.dashboardItemNoticeTitleTxt {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 22px;
-  display: flex;
-  align-items: center;
-  color: #000000;
-}
-.dashboardItemNoticeTitleTxt.is_sub {
-  font-weight: normal;
-  font-size: 12px;
-  color: #666666;
-}
-.dashboardItemNoticeTitleTxt.is_sub:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-.dashboardItemNoticeList {
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 11px 0 0 0;
-}
-.dashboardItemNoticeItem {
-  margin-bottom: 8px;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-}
-.dashboardItemNoticeItemTxt {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 22px;
-  color: #000000;
-  text-overflow:ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  flex: 1;
-  text-align: left;
-  cursor: pointer;
-}
-.dashboardItemNoticeItemTxt:hover {
-  text-decoration: underline;
-}
-.dashboardItemNoticeItemTxt.is_sub {
-  color: #666666;
-  flex: none;
-}
-
-.dashboardItemInner {
-  display: flex;
-}
-.dashboardItemRegister {
-  width: 100%;
-  flex: 1;
-  height: 160px;
-  background: #C8C8FF;
-}
-.dashboardItemManual {
-  width: 100%;
-  flex:1;
-  height: 160px;
-  background: #CAEF7C;
+button {
+  border: none;
+  outline:none;
 }

@@ -10,11 +10,13 @@ function MainProductList() {
     // const shopInfoNew = {name: "test", value: 100};
     // setShopInfo(shopInfoNew);
 
-    let [shopName, setShopName] = useState('다래샵');
-    let [memberShip, setMemberShip] = useState('BUSINESS');
-    let [creditCount, setCreditCount] = useState('100');
-    let [statusListDesc, setStatusListDesc] = useState('상품등록');
-    let [statusListDescData, setStatusListDescData] = useState('100');
+    let [dashboardData, setDashboardData] = useState({
+        shopName:'다래샵',
+        memberShip:'BUSINESS',
+        creditCount:'100',
+        serviceName:'상품등록',
+        usage:'100'
+    });
     return (
         <div className="dashboardContainer">
             <ul className="dashboardList">
@@ -25,22 +27,22 @@ function MainProductList() {
                                 <div className="dashboardItemInnerShopIcon"></div>
                             </div>
                             <div className="dashboardItemInnerDetail">
-                                <div className="dashboardItemInnerDetailShop">{shopName}</div>
+                                <div className="dashboardItemInnerDetailShop">{dashboardData.shopName}</div>
                                 <div className="dashboardItemInnerDetailWrap">
                                     <div className="dashboardItemInnerDetailMember">
                                         <span className="dashboardItemInnerDetailMemberIcon"></span>
-                                        <span className="dashboardItemInnerDetailMemberType" style={{marginRight:'15px'}}>{memberShip}</span>
+                                        <span className="dashboardItemInnerDetailMemberType" style={{marginRight:'15px'}}>{dashboardData.memberShip}</span>
                                     </div>
                                     <div className="dashboardItemInnerDetailMember">
                                         <span className="dashboardItemInnerDetailMemberIcon is_credit"></span>
-                                        <span className="dashboardItemInnerDetailMemberType">{creditCount}</span>
+                                        <span className="dashboardItemInnerDetailMemberType">{dashboardData.creditCount}</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="dashboardItemInner">
                             <ul className="dashboardItemInnerStatusList">
-                                <DashboardStatus statusListDesc={statusListDesc} statusListDescData={statusListDescData}></DashboardStatus>
+                                <DashboardStatus statusListDesc={dashboardData.serviceName} statusListDescData={dashboardData.usage}></DashboardStatus>
                             </ul>
                         </div>
                     </div>
