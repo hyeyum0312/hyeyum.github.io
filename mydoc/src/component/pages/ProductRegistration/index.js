@@ -1,7 +1,7 @@
 import React from "react";
-
 function ProductRegistration() {
     return (
-        <div></div>
+        <div>안녕</div>
     )
 }
+export default ProductRegistration

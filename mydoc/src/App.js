@@ -18,24 +18,24 @@ import './component/pages/DashBoard/style.css'
 import './component/pages/MainProductList/style.css'
 import './component/pages/Intro/style.css'
 import './component/pages/ProductRegistration/style.css'
-
+import ProductRegistration from "./component/pages/ProductRegistration";
 
 function App() {
     return (
         <div className="App">
             <Header></Header>
             <div className="bodyContainer">
-                <Route path="/intro">
+                <Route exact path="/intro">
                     <Intro></Intro>
                 </Route>
-                <Route path="/" exact>
+                <Route exact path="/">
                     <DashBoard></DashBoard>
                 </Route>
-                <Route path="/mainProductList">
+                <Route exact path="/mainProductList">
                     <MainProductList></MainProductList>
                 </Route>
-                <Route path="/ProductRegistration">
-                    {/*<ProductRegistration></ProductRegistration>*/}
+                <Route exact path="/ProductRegistration">
+                    <ProductRegistration></ProductRegistration>
                 </Route>
             </div>
             {/*<Footer></Footer>*/}

@@ -1,20 +1,7 @@
 import React from "react";
+import {useHistory} from 'react-router-dom'
+import { Link, Route, Switch } from 'react-router-dom';
 
-function MainProductList() {
-    return (
-        <div className="mainProductListWrap">
-            <div className="mainProductListBox">
-                <div className="mainProductListBoxTitle">상품리스트</div>
-                <input className="mainProductListBoxInput" placeholder={'검색어를 입력해주세요'}/>
-                <button className="mainProductListBoxBtn" type="button">+ 새상품 등록</button>
-            </div>
-            <ul className="mainProductListBox is_main">
-                <MainProductItem></MainProductItem>
-                <MainProductItem></MainProductItem>
-            </ul>
-        </div>
-    )
-}
 
 function MainProductItem() {
     return (
@@ -36,6 +23,24 @@ function MainProductItem() {
             </div>
         </li>
     )
+}
 
+function MainProductList() {
+    let history = useHistory();
+    return (
+        <div className="mainProductListWrap">
+            <div className="mainProductListBox">
+                <div className="mainProductListBoxTitle">상품리스트</div>
+                <input className="mainProductListBoxInput" placeholder='검색어를 입력해주세요' />
+                <Link to="/ProductRegistration">
+                    <button className="mainProductListBoxBtn" type="button">+ 새상품 등록</button>
+                </Link>
+            </div>
+            <ul className="mainProductListBox is_main">
+                <MainProductItem></MainProductItem>
+                <MainProductItem></MainProductItem>
+            </ul>
+        </div>
+    )
 }
 export default MainProductList

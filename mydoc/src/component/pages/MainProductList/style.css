@@ -10,6 +10,10 @@
     margin: 0;
     padding: 20px 16px;
 }
+.mainProductListBox.is_main {
+    height: 566px;
+    overflow: auto;
+}
 .mainProductListBoxTitle {
     font-weight: bold;
     font-size: 18px;
@@ -54,6 +58,10 @@
     box-sizing: border-box;
     padding: 15px 12px 8px 16px;
 }
+.mainProductItem:after {
+    background: no-repeat center / contain url("/src/img/ic_baseline-navigate-next.svg");
+}
+
 .mainProductItem+.mainProductItem {
     margin-top: 12px;
 }
